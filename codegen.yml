@@ -1,0 +1,7 @@
+schema:
+  - 'https://zlixtwkeibnpivlrfpld.hasura.ap-southeast-1.nhost.run/v1/graphql'
+documents: ./lib/graphql/**/*.ts # Adjust based on your project structure
+generates:
+  ./graphql.schema.json:
+    plugins:
+      - introspection
