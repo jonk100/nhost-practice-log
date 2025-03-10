@@ -3,6 +3,7 @@ export function logGraphQLError(operation: string, error: any) {
     message: error.message,
     networkError: error.networkError,
     graphQLErrors: error.graphQLErrors,
+    error, // Added full error object for more context
   })
 
   if (error.networkError?.result?.errors) {
@@ -20,4 +21,3 @@ export function logGraphQLError(operation: string, error: any) {
     })
   }
 }
-

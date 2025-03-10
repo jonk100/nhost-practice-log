@@ -1,0 +1,11 @@
+{
+  "name": "graphql-introspection",
+  "version": "1.0.0",
+  "description": "Script to introspect GraphQL schema",
+  "main": "introspect-mutations.js",
+  "type": "module",
+  "dependencies": {
+    "graphql-request": "^7.1.2",
+    "graphql": "^16.10.0"
+  }
+}

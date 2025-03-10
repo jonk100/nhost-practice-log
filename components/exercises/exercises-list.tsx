@@ -124,7 +124,9 @@ export function ExercisesList() {
                   <option value="Chords">Chords</option>
                   <option value="Fingerstyle">Fingerstyle</option>
                   <option value="Rhythm">Rhythm</option>
-                  <option value="Speed">Speed</option>
+                  <option value="Warmup">Warmup</option>
+                  <option value="Cooldown">Cooldown</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
               <div className="grid gap-2">

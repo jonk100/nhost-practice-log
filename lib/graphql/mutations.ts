@@ -2,8 +2,7 @@ import { gql } from "@apollo/client"
 
 export const INSERT_SONG = gql`
   mutation InsertSong($object: songs_insert_input!) {
-  insert_songs(objects: [$object]) {
-    returning {
+    insert_songs_one(object: $object) {
       id
       title
       artist
@@ -11,8 +10,6 @@ export const INSERT_SONG = gql`
       created_at
     }
   }
-}
-
 `
 
 export const UPDATE_SONG = gql`
@@ -25,6 +22,7 @@ export const UPDATE_SONG = gql`
       title
       artist
       difficulty
+      created_at
     }
   }
 `
@@ -59,6 +57,7 @@ export const UPDATE_EXERCISE = gql`
       name
       category
       difficulty
+      created_at
     }
   }
 `
@@ -90,6 +89,7 @@ export const END_PRACTICE_SESSION = gql`
       id
       start_time
       end_time
+      notes
     }
   }
 `

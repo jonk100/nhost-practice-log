@@ -181,11 +181,11 @@ export function PracticeOverview() {
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
-                      {song.tags.map((tag) => (
+                      {song.tags ? song.tags.map((tag) => (
                         <span key={tag} className="rounded-full bg-secondary px-2 py-1 text-xs">
                           {tag}
                         </span>
-                      ))}
+                      )) : null}
                     </div>
                   </CardContent>
                 </Card>
@@ -261,4 +261,3 @@ export function PracticeOverview() {
     </div>
   )
 }
-
